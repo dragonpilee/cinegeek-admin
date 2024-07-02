@@ -60,11 +60,11 @@ python app.py
 
 Open your web browser and go to http://localhost:5000 to view the admin dashboard.
 
-### Contributing
+## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-### Fork the repository.
+## Fork the repository.
 
 Create a new branch (git checkout -b feature/improvement).
 Make your changes.
@@ -72,11 +72,11 @@ Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature/improvement).
 Create a new Pull Request.
 
-### License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Acknowledgements
+## Acknowledgements
 This project was developed using Flask, a micro web framework for Python.
 Bootstrap was used for styling the frontend.
 Flask extensions such as Flask-SQLAlchemy, Flask-Bcrypt, Flask-WTF, and Flask-Login were instrumental in building this application.
