@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+    <div class="my-4">
+        <h1>Dashboard</h1>
+        <p>Welcome, {{ current_user.username }}!</p>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+    </div>
+
+    <div class="project-overview my-4">
+        <h2>CineGeek 2.0 beta</h2>
+        <p>A movie and series streaming website.</p>
+        
+        <h3>Features</h3>
+        <ul>
+            <li><strong>Browse Movies:</strong> Explore a vast collection of movies sorted by genre, release date, or popularity.</li>
+            <li><strong>Search Functionality:</strong> Easily find movies by title, director, or cast.</li>
+            <li><strong>Recommendation Engine:</strong> Get personalized movie recommendations based on your preferences and viewing history.</li>
+            <li><strong>User Authentication:</strong> Securely sign in with Google for personalized experiences.</li>
+            <li><strong>Feedback System:</strong> Provide feedback through Official Telegram and Twitter Handles.</li>
+            <li><strong>Responsive Design:</strong> Enjoy a seamless experience across devices with our responsive web design.</li>
+            <li><strong>Admin Dashboard:</strong> Manage users, content, and view.</li> <!-- Added admin dashboard feature -->
+            <li><strong>Analytics:</strong> Monitor real-time analytics to understand user behavior and optimize content delivery.</li>
+
+        </ul>
+        
+        <h3>Tech Stack</h3>
+        <ul>
+            <li><a href="https://nextjs.org/">Next.js</a> – framework</li>
+            <li><a href="https://www.typescriptlang.org/">TypeScript</a> – language</li>
+            <li><a href="https://tailwindcss.com/">Tailwind</a> – CSS</li>
+            <li><a href="https://vercel.com/">Vercel</a> – deployments</li>
+            <li><a href="https://www.themoviedb.org/">TMDb</a> - movie database</li>
+            <li><a href="https://vidsrc.cc">Vidsrc.cc</a> - streaming links</li>
+            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> – web framework</li>
+            <li><a href="https://www.sqlalchemy.org/">SQLAlchemy</a> – SQL toolkit and ORM</li>
+            <li><a href="https://www.sqlite.org/">SQLite</a> – relational database</li>
+            <li><a href="https://firebase.google.com/">Firebase</a> – backend services (authentication, data storage, etc.)</li>
+        </ul>
+
+        <h3>Contributing</h3>
+        <p>Contributions are welcome! If you'd like to contribute to this project, please follow these steps:</p>
+        <ol>
+            <li>Fork the repository.</li>
+            <li>Create a new branch (`git checkout -b feature/improvement`).</li>
+            <li>Make your changes.</li>
+            <li>Commit your changes (`git commit -am 'Add new feature'`).</li>
+            <li>Push to the branch (`git push origin feature/improvement`).</li>
+            <li>Create a new Pull Request.</li>
+        </ol>
+        
+        <h3>License</h3>
+        <p>This project is licensed under the MIT License. </p>
+        
+        <h3>Acknowledgements</h3>
+        <ul>
+            <li>The Movie Database (TMDb) for providing the movie data through their API.</li>
+            <li>Vidsrc.cc for providing the movie streaming links.</li>
+        </ul>
+        <p>Check out the project <a href="https://cinegeek-beta.vercel.app/">here</a>.</p>
+
+    </div>
+{% endblock %}
